@@ -1,0 +1,28 @@
+<h1>{{ name }}</h1>
+<dl>
+    <dt>Nombre:</dt>
+    <dd>{{ name }}</dd>
+
+    <dt>Edad:</dt>
+    <dd>{{ age }}</dd>
+
+    <dt>Método:</dt>
+    <dd>{{ getHeroDescription() }}</dd> <!-- Call the method correctly -->
+
+    <dt>CAPITALIZADO:</dt>
+    <dd>{{ capitalizaedName }}</dd> <!-- Fixed the typo here -->
+
+    <button  *ngIf="name !== 'Venon'"
+    class="btn btn-primary mx-2" 
+    (click)="changeHero('Venon')">
+        Cambiar Nombre
+    </button>
+
+    <button 
+    *ngIf="age !==255 "
+    class="btn btn-primary" (click)="changeAge(255)">
+        Cambiar Edad
+    </button>
+
+    <button type="reset" (click)="resetForm()" class="btn btn-primary mx-2">Reset value</button>
+</dl>
