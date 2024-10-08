@@ -8,17 +8,20 @@ import { AppComponent } from './app.component';
 import { ListComponent } from './heroes/list/list.component';
 import { CounterModule } from './counter/counter.module';
 import { HeroesModule } from './heroes/heroes.module';
+import { DBZModule } from './dbz/dbz.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ListComponent  // Eliminar HeroComponent de aquí
+    ListComponent,
+      // Asegúrate de que MainPageComponent esté declarado
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     CounterModule,
-    HeroesModule
+    HeroesModule,
+    DBZModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

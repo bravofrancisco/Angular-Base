@@ -1,0 +1,9 @@
+#aprender Module
+1.-Profundizar un poco mas en los modulos✅
+2.-FormsModule
+3.-ngModel
+4.-@inputs
+5.-@outputs
+6.-Servicios
+7.-Metodos  Servicios
+8.-Depuracion
